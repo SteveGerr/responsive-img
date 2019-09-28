@@ -15,7 +15,7 @@ var gulp        = require('gulp'),
 gulp.task('sass', function(done) {
   done();
   // return gulp.src('app/sass/**/*.sass')//Берем все sass файлы из папки sass и дочерних
-  return gulp.src('app/sass/*.sass')//Берем все sass файлы из папки sass и дочерних
+  return gulp.src('app/sass/*.scss')//Берем все sass файлы из папки sass и дочерних
   .pipe(sass())// преобразуем sass в css
   .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
   .pipe(gulp.dest('app/css')) //Сохраняем полученные файлы в app/css
@@ -55,7 +55,7 @@ gulp.task('css-libs', gulp.parallel('sass'), function() {
 
 gulp.task('watch',  function(done) {
   done();
-  gulp.watch('app/sass/**/*.sass', gulp.parallel('sass'));// Отслеживаем изменения всех sass файлов
+  gulp.watch('app/sass/**/*.scss', gulp.parallel('sass'));// Отслеживаем изменения всех sass файлов
   gulp.watch('app/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
   gulp.watch('app/js/**/*.js', browserSync.reload); // Наблюдение за JS файлами в папке js
 }

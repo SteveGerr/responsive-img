@@ -1,2 +1,163 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
 body {
   background-color: #496ceb; }
+
+.container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 500px;
+  min-width: 300px;
+  max-height: 300px;
+  min-height: 100px;
+  animation: scale 5s ease-in-out infinite;
+  -webkit-animation: scale 5s ease-in-out infinite; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background: #ff8000; }
+
+.inner-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background: #01a59d; }
+
+h2 {
+  color: #ffffff; }
+
+.container-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  padding: 20px;
+  background: white; }
+
+.top-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #01a59d; }
+  .top-block .top-left, .top-block .top-right {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    background: #c0c0c0;
+    margin: 10px; }
+  .top-block .top-left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .top-block .top-left .heading {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      height: 50px;
+      background: #8f0808; }
+    .top-block .top-left .img {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      height: 100px;
+      background: #ff8000; }
+  .top-block .top-right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .top-block .top-right__right {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+    .top-block .top-right__left {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 30%; }
+  .top-block .text, .top-block .text-2, .top-block .text-3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background: #8f0808;
+    margin: 5px; }
+  .top-block .text, .top-block .text-2 {
+    max-height: 20px; }
+
+@-webkit-keyframes scale {
+  from {
+    width: 500px; }
+  50% {
+    width: 300px; }
+  to {
+    width: 500px; } }
+
+@keyframes scale {
+  from {
+    width: 500px; }
+  50% {
+    width: 300px; }
+  to {
+    width: 500px; } }

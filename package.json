@@ -21,8 +21,10 @@
     "node-sass": "^4.11.0"
   },
   "dependencies": {
+    "browser-sync": "^2.26.7",
     "del": "^3.0.0",
     "gulp-rename": "^1.4.0",
+    "gulp-uglifyjs": "^0.6.2",
     "imagemin-pngquant": "^6.0.0",
     "uglify-js": "^3.4.9"
   }
